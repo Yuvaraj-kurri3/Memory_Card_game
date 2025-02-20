@@ -7,8 +7,11 @@ body {
     background-repeat: no-repeat;
     /* Hide scrollbar for all browsers */
     overflow: hidden;
-
-
+    background-attachment: fixed; /* Optional: Keeps background fixed */
+    height: 100vh; /* Ensures it covers the full viewport height */
+    width: 100vw; /* Ensures it covers the full viewport width */
+    margin: 0;
+    padding: 0;
 }
 
 .game-board {
@@ -73,4 +76,21 @@ body {
         font-family:Georgia, 'Times New Roman', Times, serif;
 
     }
+    .game-board {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(4, 100px);
+        gap: 5px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    
+}
+@media (max-width: 700px) {
+    #Refresh{
+        width:130px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+
+    }
+    
 }
